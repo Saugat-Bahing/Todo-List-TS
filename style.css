@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+header{
+    height: 10vh;
+    /* border: 1px solid red; */
+    background-color: black;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+nav h1 {
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+.add-item {
+    height: 45vh;
+    min-height: 250px;
+    padding-top: 20px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+.description-container {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+.title {
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.title-container label {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.description {
+    height: 100px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.description-container label {
+    font-size: 1.5rem;
+    padding: 10px; 
+}
+
+.add-item-button {
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.add-item-button:hover {
+    transform: translateX(2px);
+}
+
+.display-item {
+    height: 60vh;
+    margin-top: 25px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.section {
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+.remove-button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 25px;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 1px black;
+}
+
+.remove-button:hover {
+    transform: translateX(2px);
+}
+
+@media screen and (max-width: 900px){
+    .display-item {
+        width: 92vw;
+    }
+
+    .add-item{
+        width: 90vw;
+    }
+}
